@@ -109,7 +109,7 @@
         },
 
         isLimit: function () {
-            if (this.time * this.timeUnit > 100) {
+            if (this.time * this.timeUnit < 0) {
                 return true;
             }
             return false;
