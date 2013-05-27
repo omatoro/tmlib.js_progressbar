@@ -20,6 +20,13 @@
         	--this.time;
         },
 
+        isLimit: function () {
+            if (this.time * this.timeUnit > 100) {
+                return true;
+            }
+            return false;
+        },
+
         reset : function (time) {
         	this.time = time;
         }
